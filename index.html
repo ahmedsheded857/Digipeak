@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digipeak - Building the Future of Digital Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- تأثير المؤشر -->
+    <div class="cursor-light"></div>
+
+    <!-- الشريط العلوي -->
+    <header>
+        <a href="#" class="logo">Digi<span>peak</span></a>
+        <nav>
+            <ul>
+                <li><a href="#hero" data-key="nav.home">Home</a></li>
+                <li><a href="#services" data-key="nav.services">Services</a></li>
+                <li><a href="#about" data-key="nav.about">About</a></li>
+                <li><a href="#counter-stats" data-key="nav.stats">Stats</a></li>
+                <li><a href="#projects" data-key="nav.projects">Our Projects</a></li>
+                <li><a href="#contact" data-key="nav.contact">Contact</a></li>
+                <!-- أزرار التحكم في الشريط العلوي -->
+                 <div class="nav-controls"> 
+                    <button id="theme-toggle" class="control-btn" title="Toggle Dark/Light Mode">
+                        <span id="theme-icon">🌙</span>
+                    </button>
+                    <button id="language-toggle" class="control-btn" title="Toggle Language">
+                        <span id="language-icon">AR</span>
+                    </button>
+                </div>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <section id="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h1 class="gradient-text neon-text" data-aos="fade-up" data-aos-duration="1000" data-key="hero.title">We Build the <span class="gradient-text">Future</span> of Digital Experience</h1>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-key="hero.subtitle">At Digipeak, we provide integrated technological solutions to accelerate your business growth in the digital age</p>
+            <a href="#contact" class="btn btn-primary btn-glow" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-key="hero.cta">Start Your Project Now</a>
+        </div>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section id="services">
+        <div class="section-title">
+            <h2 class="gradient-text" data-aos="fade-up" data-aos-duration="800" data-key="services.title">Our Integrated Services</h2>
+            <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-key="services.subtitle">We offer a comprehensive range of technical services to turn your ideas into tangible reality</p>
+        </div>
+        <div class="services-grid">
+            <!-- بطاقة تطوير الويب -->
+            <div class="service-card glass" data-aos="fade-up" data-aos-duration="800">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 data-key="services.web">Web Development</h3>
+                <p data-key="services.webDesc">We design and develop responsive and fast websites using the latest technologies to achieve your business goals.</p>
+                <button class="btn btn-primary btn-small service-read-more" data-service="web" data-key="services.readMore">Read More</button>
+            </div>
+            
+            <!-- بطاقة تطبيقات الموبايل -->
+            <div class="service-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3 data-key="services.mobile">Mobile Apps</h3>
+                <p data-key="services.mobileDesc">We create innovative mobile applications for iOS and Android to expand your brand's reach.</p>
+                <button class="btn btn-primary btn-small service-read-more" data-service="mobile" data-key="services.readMore">Read More</button>
+            </div>
+            
+            <!-- بطاقة الأمن السيبراني -->
+            <div class="service-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <div class="service-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 data-key="services.security">Cyber Security</h3>
+                <p data-key="services.securityDesc">We protect your data and systems from electronic threats using the latest protection technologies.</p>
+                <button class="btn btn-primary btn-small service-read-more" data-service="security" data-key="services.readMore">Read More</button>
+            </div>
+            
+            <!-- بطاقة تصميم واجهات المستخدم -->
+            <div class="service-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                <div class="service-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3 data-key="services.design">UI/UX Design</h3>
+                <p data-key="services.designDesc">We design attractive and easy-to-use user interfaces that enhance customer experience and achieve conversion goals.</p>
+                <button class="btn btn-primary btn-small service-read-more" data-service="design" data-key="services.readMore">Read More</button>
+            </div>
+            
+            <!-- بطاقة حلول الذكاء الاصطناعي -->
+            <div class="service-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                <div class="service-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3 data-key="services.ai">AI Solutions</h3>
+                <p data-key="services.aiDesc">We develop custom AI solutions to automate your operations and make smarter decisions.</p>
+                <button class="btn btn-primary btn-small service-read-more" data-service="ai" data-key="services.readMore">Read More</button>
+            </div>
+            
+            <!-- بطاقة التسويق الرقمي -->
+            <div class="service-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 data-key="services.marketing">Digital Marketing</h3>
+                <p data-key="services.marketingDesc">We implement effective digital marketing strategies to increase your brand visibility and attract new customers.</p>
+                <button class="btn btn-primary btn-small service-read-more" data-service="marketing" data-key="services.readMore">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم عن الشركة -->
+    <section id="about">
+        <div class="about-content" data-aos="fade-right" data-aos-duration="800">
+            <h2 class="gradient-text" data-key="about.title">About Us</h2>
+            <p data-key="about.p1">Digipeak is a leading technology company founded in 2015, specializing in providing integrated digital solutions for companies and institutions across various sectors.</p>
+            <p data-key="about.p2">We believe that technology should be a tool for achieving growth and innovation, and we always strive to provide customized solutions that meet our clients' needs and exceed their expectations.</p>
+            <p data-key="about.p3">Our team consists of a group of experts, developers, and professional designers who combine creativity with technical expertise to achieve the best results.</p>
+            
+            <!-- قسم "اقرأ المزيد" -->
+            <div class="about-more-content" id="about-more">
+                <p>Since our inception, we've worked with over 50 clients across various industries, delivering cutting-edge solutions that drive real business results. Our approach combines technical excellence with deep industry knowledge to create solutions that are not only technologically advanced but also strategically aligned with our clients' business objectives.</p>
+                <p>We pride ourselves on our commitment to quality, innovation, and customer satisfaction. Our agile development methodology ensures that we can adapt to changing requirements and deliver projects on time and within budget.</p>
+                <p>Our team continuously invests in learning and development to stay at the forefront of technological advancements, ensuring that our clients benefit from the latest innovations in web development, mobile applications, cybersecurity, AI, and digital marketing.</p>
+            </div>
+            
+            <button class="read-more-btn" id="about-read-more">
+                <span data-key="about.readMore">Read More</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            
+            <div class="about-stats">
+                <div class="stat">
+                    <h3>150+</h3>
+                    <p data-key="about.projects">Completed Projects</p>
+                </div>
+                <div class="stat">
+                    <h3>50+</h3>
+                    <p data-key="about.clients">Satisfied Clients</p>
+                </div>
+                <div class="stat">
+                    <h3>2+</h3>
+                    <p data-key="about.experience">Years of Experience</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-image" data-aos="fade-left" data-aos-duration="800">
+            <img src="./images/pexels-pixabay-256502.jpg" alt="Digipeak Team">
+        </div>
+    </section>
+
+    <!-- قسم الإحصائيات المتحركة -->
+    <section id="counter-stats">
+        <div class="section-title">
+            <h2 class="gradient-text" data-aos="fade-up" data-aos-duration="800" data-key="stats.title">Our Impact in Numbers</h2>
+            <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-key="stats.subtitle">Quantifying our success and experience through key metrics</p>
+        </div>
+        <div class="stats-container">
+            <div class="stat-box glass" data-aos="fade-up" data-aos-duration="800">
+                <span class="stat-number" id="clients-counter">0</span>
+                <span class="stat-label" data-key="stats.clients">Clients Served</span>
+            </div>
+            <div class="stat-box glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                <span class="stat-number" id="projects-counter">0</span>
+                <span class="stat-label" data-key="stats.projects">Projects Completed</span>
+            </div>
+            <div class="stat-box glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <span class="stat-number" id="experience-counter">0</span>
+                <span class="stat-label" data-key="stats.experience">Years of Experience</span>
+            </div>
+            <div class="stat-box glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                <span class="stat-number" id="team-counter">0</span>
+                <span class="stat-label" data-key="stats.team">Team Members</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المشاريع -->
+    <section id="projects">
+        <div class="section-title">
+            <h2 class="gradient-text" data-aos="fade-up" data-aos-duration="800" data-key="projects.title">Our Projects</h2>
+            <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-key="projects.subtitle">Explore our portfolio of successful projects across different categories</p>
+        </div>
+        
+        <div class="projects-categories" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+            <button class="category-btn active" data-category="all" data-key="projects.all">All Projects</button>
+            <button class="category-btn" data-category="web" data-key="projects.web">Web Development</button>
+            <button class="category-btn" data-category="mobile" data-key="projects.mobile">Mobile Apps</button>
+            <button class="category-btn" data-category="security" data-key="projects.security">Cyber Security</button>
+            <button class="category-btn" data-category="marketing" data-key="projects.marketing">Digital Marketing</button>
+            <button class="category-btn" data-category="design" data-key="projects.design">UI/UX Design</button>
+            <button class="category-btn" data-category="ai" data-key="projects.ai">AI Solutions</button>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- مشاريع تطوير الويب -->
+            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-category="web" data-project="web1">
+                <div class="project-image">
+                    <img src="./images/pexels-julio-lopez-75309646-29502363.jpg" alt="E-commerce Platform">
+                </div>
+                <div class="project-content">
+                    <h3 data-key="projects.web1.title">E-commerce Platform</h3>
+                    <p data-key="projects.web1.desc">A comprehensive online shopping platform with advanced features and secure payment integration.</p>
+                </div>
+            </div>
+            
+            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-category="web" data-project="web2">
+                <div class="project-image">
+                    <img src="./images/pexels-magnetme-3917414-5839466.jpg" alt="Corporate Website">
+                </div>
+                <div class="project-content">
+                    <h3 data-key="projects.web2.title">Corporate Website</h3>
+                    <p data-key="projects.web2.desc">A modern corporate website with CMS integration and responsive design for optimal user experience.</p>
+                </div>
+            </div>
+            
+            <!-- مشاريع تطبيقات الموبايل -->
+            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-category="mobile" data-project="mobile1">
+                <div class="project-image">
+                    <img src="./images/pexels-thisisengineering-3912977.jpg" alt="Fitness App">
+                </div>
+                <div class="project-content">
+                    <h3 data-key="projects.mobile1.title">Fitness Tracking App</h3>
+                    <p data-key="projects.mobile1.desc">A mobile application for tracking workouts, nutrition, and health metrics with personalized recommendations.</p>
+                </div>
+            </div>
+            
+            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" data-category="mobile" data-project="mobile2">
+                <div class="project-image">
+                    <img src="./images/pexels-anna-nekrashevich-6802049.jpg" alt="Finance App">
+                </div>
+                <div class="project-content">
+                    <h3 data-key="projects.mobile2.title">Personal Finance App</h3>
+                    <p data-key="projects.mobile2.desc">An intuitive mobile application for managing personal finances, budgets, and investment portfolios.</p>
+                </div>
+            </div>
+            
+            <!-- مشاريع الأمن السيبراني -->
+            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" data-category="security" data-project="security1">
+                <div class="project-image">
+                    <img src="./images/pexels-tima-miroshnichenko-5380589.jpg" alt="Security System">
+                </div>
+                <div class="project-content">
+                    <h3 data-key="projects.security1.title">Enterprise Security System</h3>
+                    <p data-key="projects.security1.desc">A comprehensive security solution for enterprise networks with threat detection and prevention capabilities.</p>
+                </div>
+            </div>
+            
+            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500" data-category="security" data-project="security2">
+                <div class="project-image">
+                    <img src="./images/pexels-pixabay-60504.jpg" alt="Data Protection">
+                </div>
+                <div class="project-content">
+                    <h3 data-key="projects.security2.title">Data Protection Framework</h3>
+                    <p data-key="projects.security2.desc">Implementation of a robust data protection framework with encryption and access control mechanisms.</p>
+                </div>
+            </div>
+            
+            <!-- مشاريع التسويق الرقمي -->
+            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600" data-category="marketing" data-project="marketing1">
+                <div class="project-image">
+                    <img src="./images/pexels-mikael-blomkvist-6476193.jpg" alt="Marketing Campaign">
+                </div>
+                <div class="project-content">
+                    <h3 data-key="projects.marketing1.title">Digital Marketing Campaign</h3>
+                    <p data-key="projects.marketing1.desc">A comprehensive digital marketing campaign that increased brand awareness by 150% in 3 months.</p>
+                </div>
+            </div>
+            
+            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700" data-category="marketing" data-project="marketing2">
+                <div class="project-image">
+                    <img src="./images/pexels-tobias-dziuba-319638-942331.jpg" alt="SEO Strategy">
+                </div>
+                <div class="project-content">
+                    <h3 data-key="projects.marketing2.title">SEO Optimization Strategy</h3>
+                    <p data-key="projects.marketing2.desc">Implementation of an SEO strategy that improved organic search rankings and increased website traffic by 200%.</p>
+                </div>
+            </div>
+            
+            <!-- مشاريع تصميم واجهات المستخدم -->
+            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800" data-category="design" data-project="design1">
+                <div class="project-image">
+                    <img src="./images/pexels-pixabay-221185.jpg" alt="UI Design">
+                </div>
+                <div class="project-content">
+                    <h3 data-key="projects.design1.title">Banking App UI Design</h3>
+                    <p data-key="projects.design1.desc">A modern and intuitive user interface design for a mobile banking application with enhanced user experience.</p>
+                </div>
+            </div>
+            
+            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="900" data-category="design" data-project="design2">
+                <div class="project-image">
+                    <img src="./images/pexels-pavel-danilyuk-6407632.jpg" alt="UX Research">
+                </div>
+                <div class="project-content">
+                    <h3 data-key="projects.design2.title">E-commerce UX Research</h3>
+                    <p data-key="projects.design2.desc">Comprehensive user experience research and redesign for an e-commerce platform to improve conversion rates.</p>
+                </div>
+            </div>
+            
+            <!-- مشاريع الذكاء الاصطناعي -->
+            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000" data-category="ai" data-project="ai1">
+                <div class="project-image">
+                    <img src="./images/pexels-uma-media-2149408028-30875540.jpg" alt="AI Chatbot">
+                </div>
+                <div class="project-content">
+                    <h3 data-key="projects.ai1.title">AI-Powered Chatbot</h3>
+                    <p data-key="projects.ai1.desc">Development of an intelligent chatbot for customer service with natural language processing capabilities.</p>
+                </div>
+            </div>
+            
+            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1100" data-category="ai" data-project="ai2">
+                <div class="project-image">
+                    <img src="./images/pexels-rdne-7947670.jpg" alt="Predictive Analytics">
+                </div>
+                <div class="project-content">
+                    <h3 data-key="projects.ai2.title">Predictive Analytics System</h3>
+                    <p data-key="projects.ai2.desc">Implementation of a machine learning system for predictive analytics and business intelligence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التقنيات -->
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="tech-stack-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Our Tech Stack</h2>
+                <p class="section-description">We use the latest technologies to deliver secure, fast, and scalable digital solutions.</p>
+            </div>
+            
+            <div class="tech-marquee">
+                <div class="tech-marquee-content">
+                    <!-- First set -->
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <span class="tech-name">HTML5</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <span class="tech-name">CSS3</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <span class="tech-name">JavaScript</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <span class="tech-name">React</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <span class="tech-name">PHP</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-laravel"></i>
+                        </div>
+                        <span class="tech-name">Laravel</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <span class="tech-name">MySQL</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <span class="tech-name">Node.js</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <span class="tech-name">Python</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-wordpress"></i>
+                        </div>
+                        <span class="tech-name">WordPress</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <span class="tech-name">Flutter</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <span class="tech-name">Firebase</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <span class="tech-name">Figma</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-adobe"></i>
+                        </div>
+                        <span class="tech-name">Adobe XD</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <span class="tech-name">AWS</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-linux"></i>
+                        </div>
+                        <span class="tech-name">Linux</span>
+                    </div>
+                    
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <span class="tech-name">HTML5</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <span class="tech-name">CSS3</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <span class="tech-name">JavaScript</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <span class="tech-name">React</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <span class="tech-name">PHP</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-laravel"></i>
+                        </div>
+                        <span class="tech-name">Laravel</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <span class="tech-name">MySQL</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <span class="tech-name">Node.js</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <span class="tech-name">Python</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-wordpress"></i>
+                        </div>
+                        <span class="tech-name">WordPress</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <span class="tech-name">Flutter</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <span class="tech-name">Firebase</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <span class="tech-name">Figma</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-adobe"></i>
+                        </div>
+                        <span class="tech-name">Adobe XD</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <span class="tech-name">AWS</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fab fa-linux"></i>
+                        </div>
+                        <span class="tech-name">Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact">
+        <div class="section-title">
+            <h2 class="gradient-text" data-aos="fade-up" data-aos-duration="800" data-key="contact.title">Contact Us</h2>
+            <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-key="contact.subtitle">We're here to answer your inquiries and help you start your next project</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right" data-aos-duration="800">
+                <h3 data-key="contact.info">Contact Information</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4 data-key="contact.address">Address</h4>
+                        <p data-key="contact.addressValue">Cairo, Egypt</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4 data-key="contact.phone">Phone</h4>
+                        <p><a href="https://wa.me/201501715559" style="color: inherit; text-decoration: none;">+01501715559</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4 data-key="contact.email">Email</h4>
+                        <p>digipeak160@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                        <h4 data-key="contact.hours">Working Hours</h4>
+                        <p data-key="contact.hoursValue">Sunday - Thursday: 9 AM - 5 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form" data-aos="fade-left" data-aos-duration="800">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" class="form-control" data-key="contact.form.name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" data-key="contact.form.email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" data-key="contact.form.subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" data-key="contact.form.message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-glow" data-key="contact.form.submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <div class="footer-logo">Digi<span>peak</span></div>
+                <p data-key="footer.about">A leading company in providing integrated technological solutions to accelerate business growth in the digital age.</p>
+                <div class="social-links">
+                    <a href="https://x.com/_DigiPeak_?t=di-RC1te5cHChqBa5cMvZg&s=09"><span class="x-icon">𝕏</span></a>
+                    <a href="http://www.facebook.com/profile.php?id=61568146570674"><i class="fab fa-facebook-f"></i></a>
+                    <a href="http://www.linkedin.com/company/design-hive-3/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="http://www.instagram.com/digipeak___?igsh=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3 data-key="footer.quickLinks">Quick Links</h3>
+                <ul>
+                    <li><a href="#hero" data-key="nav.home">Home</a></li>
+                    <li><a href="#services" data-key="nav.services">Services</a></li>
+                    <li><a href="#about" data-key="nav.about">About</a></li>
+                    <li><a href="#counter-stats" data-key="nav.stats">Stats</a></li>
+                    <li><a href="#projects" data-key="nav.projects">Our Projects</a></li>
+                    <li><a href="#contact" data-key="nav.contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 data-key="footer.services">Our Services</h3>
+                <ul>
+                    <li><a href="#" data-key="services.web">Web Development</a></li>
+                    <li><a href="#" data-key="services.mobile">Mobile Apps</a></li>
+                    <li><a href="#" data-key="services.security">Cyber Security</a></li>
+                    <li><a href="#" data-key="services.design">UI/UX Design</a></li>
+                    <li><a href="#" data-key="services.ai">AI Solutions</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 data-key="footer.resources">Resources</h3>
+                <ul>
+                    <li><a href="#" data-key="footer.blog">Blog</a></li>
+                    <li><a href="#" data-key="footer.faq">FAQ</a></li>
+                    <li><a href="#" data-key="footer.privacy">Privacy Policy</a></li>
+                    <li><a href="#" data-key="footer.terms">Terms of Service</a></li>
+                    <li><a href="#" data-key="footer.support">Technical Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p data-key="footer.copyright">All Rights Reserved &copy; 2024 Digipeak</p>
+        </div>
+    </footer>
+
+    <!-- المودال الخاص بالخدمات -->
+    <div class="modal-overlay" id="service-modal">
+        <div class="service-modal glass">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <div class="modal-icon" id="modal-icon"></div>
+                <h3 id="modal-title">Service Title</h3>
+            </div>
+            <div class="modal-content">
+                <p id="modal-description">Service description will appear here.</p>
+                <div class="modal-features">
+                    <h4 data-key="modal.features">Key Features</h4>
+                    <ul id="modal-features-list">
+                        <!-- Features will be added dynamically -->
+                    </ul>
+                </div>
+                <p id="modal-additional">Additional information about the service.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- المودال الخاص بالمشاريع -->
+    <div class="modal-overlay" id="project-modal">
+        <div class="project-modal glass">
+            <button class="modal-close" id="project-modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="project-modal-image">
+                <img id="project-modal-img" src="" alt="Project Image">
+            </div>
+            <div class="project-modal-content">
+                <h3 id="project-modal-title">Project Title</h3>
+                <p id="project-modal-description">Project description will appear here.</p>
+                <div class="project-modal-features">
+                    <h4 data-key="modal.features">Key Features</h4>
+                    <ul id="project-modal-features-list">
+                        <!-- Features will be added dynamically -->
+                    </ul>
+                </div>
+                <p id="project-modal-additional">Additional information about the project.</p>
+                <a href="#" id="project-modal-link" class="project-modal-link" target="_blank" data-key="projects.viewLive">View Live Project</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
