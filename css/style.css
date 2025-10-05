@@ -48,6 +48,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html, body {
+  overflow-x: hidden !important;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
