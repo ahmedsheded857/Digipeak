@@ -1,0 +1,99 @@
+#about {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    color: var(--text-gray);
+}
+
+.about-stats {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 2rem;
+    color: var(--accent-cyan);
+    margin-bottom: 5px;
+}
+
+.about-image {
+    flex: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* قسم "اقرأ المزيد" في قسم عن الشركة */
+.about-more-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    margin-top: 20px;
+}
+
+.about-more-content.expanded {
+    max-height: 1000px;
+}
+
+.about-more-content p {
+    margin-bottom: 15px;
+    color: var(--text-gray);
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    color: var(--accent-cyan);
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: var(--transition);
+    margin-top: 10px;
+}
+
+.read-more-btn:hover {
+    color: var(--accent-blue);
+}
+
+@media (max-width: 992px) {
+    #about {
+        flex-direction: column;
+    }
+    
+    .about-stats {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -6,8 +6,20 @@
     <title>Digipeak - Building the Future of Digital Experience</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v9/font/simple-icons.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    
+        <!-- ملفات CSS المنفصلة -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/stats.css">
+    <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/techstack.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
     <!-- تأثير المؤشر -->
@@ -50,74 +62,80 @@
         </div>
     </section>
 
-    <!-- قسم الخدمات -->
-    <section id="services">
-        <div class="section-title">
-            <h2 class="gradient-text" data-aos="fade-up" data-aos-duration="800" data-key="services.title">Our Integrated Services</h2>
-            <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-key="services.subtitle">We offer a comprehensive range of technical services to turn your ideas into tangible reality</p>
+<!-- قسم الخدمات -->
+<section id="services">
+    <div class="section-title">
+        <h2 class="gradient-text" data-aos="fade-up" data-aos-duration="800" data-key="services.title">Our Integrated Services</h2>
+        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-key="services.subtitle">We offer a comprehensive range of technical services to turn your ideas into tangible reality</p>
+    </div>
+    <div class="services-grid">
+        <!-- بطاقة تطوير الويب -->
+        <div class="service-card glass" data-aos="fade-up" data-aos-duration="800">
+            <div class="service-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <h3 data-key="services.web">Web Development</h3>
+            <p data-key="services.webDesc">We design and develop responsive and fast websites using the latest technologies to achieve your business goals.</p>
+            <button class="btn btn-primary btn-small service-read-more" data-service="web" data-key="services.readMore">Read More</button>
         </div>
-        <div class="services-grid">
-            <!-- بطاقة تطوير الويب -->
-            <div class="service-card glass" data-aos="fade-up" data-aos-duration="800">
-                <div class="service-icon">
-                    <i class="fas fa-code"></i>
-                </div>
-                <h3 data-key="services.web">Web Development</h3>
-                <p data-key="services.webDesc">We design and develop responsive and fast websites using the latest technologies to achieve your business goals.</p>
-                <button class="btn btn-primary btn-small service-read-more" data-service="web" data-key="services.readMore">Read More</button>
+        
+        <!-- بطاقة تطبيقات الموبايل -->
+        <div class="service-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+            <div class="service-icon">
+                <i class="fas fa-mobile-alt"></i>
             </div>
-            
-            <!-- بطاقة تطبيقات الموبايل -->
-            <div class="service-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                <div class="service-icon">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <h3 data-key="services.mobile">Mobile Apps</h3>
-                <p data-key="services.mobileDesc">We create innovative mobile applications for iOS and Android to expand your brand's reach.</p>
-                <button class="btn btn-primary btn-small service-read-more" data-service="mobile" data-key="services.readMore">Read More</button>
-            </div>
-            
-            <!-- بطاقة الأمن السيبراني -->
-            <div class="service-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                <div class="service-icon">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-                <h3 data-key="services.security">Cyber Security</h3>
-                <p data-key="services.securityDesc">We protect your data and systems from electronic threats using the latest protection technologies.</p>
-                <button class="btn btn-primary btn-small service-read-more" data-service="security" data-key="services.readMore">Read More</button>
-            </div>
-            
-            <!-- بطاقة تصميم واجهات المستخدم -->
-            <div class="service-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                <div class="service-icon">
-                    <i class="fas fa-palette"></i>
-                </div>
-                <h3 data-key="services.design">UI/UX Design</h3>
-                <p data-key="services.designDesc">We design attractive and easy-to-use user interfaces that enhance customer experience and achieve conversion goals.</p>
-                <button class="btn btn-primary btn-small service-read-more" data-service="design" data-key="services.readMore">Read More</button>
-            </div>
-            
-            <!-- بطاقة حلول الذكاء الاصطناعي -->
-            <div class="service-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                <div class="service-icon">
-                    <i class="fas fa-robot"></i>
-                </div>
-                <h3 data-key="services.ai">AI Solutions</h3>
-                <p data-key="services.aiDesc">We develop custom AI solutions to automate your operations and make smarter decisions.</p>
-                <button class="btn btn-primary btn-small service-read-more" data-service="ai" data-key="services.readMore">Read More</button>
-            </div>
-            
-            <!-- بطاقة التسويق الرقمي -->
-            <div class="service-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
-                <div class="service-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <h3 data-key="services.marketing">Digital Marketing</h3>
-                <p data-key="services.marketingDesc">We implement effective digital marketing strategies to increase your brand visibility and attract new customers.</p>
-                <button class="btn btn-primary btn-small service-read-more" data-service="marketing" data-key="services.readMore">Read More</button>
-            </div>
+            <h3 data-key="services.mobile">Mobile Apps</h3>
+            <p data-key="services.mobileDesc">We create innovative mobile applications for iOS and Android to expand your brand's reach.</p>
+            <button class="btn btn-primary btn-small service-read-more" data-service="mobile" data-key="services.readMore">Read More</button>
         </div>
-    </section>
+        
+        <!-- بطاقة الأمن السيبراني -->
+        <div class="service-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <div class="service-icon">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 data-key="services.security">Cyber Security</h3>
+            <p data-key="services.securityDesc">We protect your data and systems from electronic threats using the latest protection technologies.</p>
+            <button class="btn btn-primary btn-small service-read-more" data-service="security" data-key="services.readMore">Read More</button>
+        </div>
+        
+        <!-- باقي الخدمات (مخفية في الموبايل) -->
+        <div class="service-card glass mobile-hidden-service" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+            <div class="service-icon">
+                <i class="fas fa-palette"></i>
+            </div>
+            <h3 data-key="services.design">UI/UX Design</h3>
+            <p data-key="services.designDesc">We design attractive and easy-to-use user interfaces that enhance customer experience and achieve conversion goals.</p>
+            <button class="btn btn-primary btn-small service-read-more" data-service="design" data-key="services.readMore">Read More</button>
+        </div>
+        
+        <div class="service-card glass mobile-hidden-service" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+            <div class="service-icon">
+                <i class="fas fa-robot"></i>
+            </div>
+            <h3 data-key="services.ai">AI Solutions</h3>
+            <p data-key="services.aiDesc">We develop custom AI solutions to automate your operations and make smarter decisions.</p>
+            <button class="btn btn-primary btn-small service-read-more" data-service="ai" data-key="services.readMore">Read More</button>
+        </div>
+        
+        <div class="service-card glass mobile-hidden-service" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+            <div class="service-icon">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 data-key="services.marketing">Digital Marketing</h3>
+            <p data-key="services.marketingDesc">We implement effective digital marketing strategies to increase your brand visibility and attract new customers.</p>
+            <button class="btn btn-primary btn-small service-read-more" data-service="marketing" data-key="services.readMore">Read More</button>
+        </div>
+    </div>
+    
+    <!-- زر View All للموبايل فقط -->
+    <div class="view-all-container mobile-only" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+        <button class="btn btn-primary btn-glow view-all-btn" id="viewAllServices">
+            <span data-key="services.viewAll">View All</span>
+            <i class="fas fa-chevron-down"></i>
+        </button>
+    </div>
+</section>
 
     <!-- قسم عن الشركة -->
     <section id="about">
@@ -184,153 +202,150 @@
             </div>
         </div>
     </section>
-
-    <!-- قسم المشاريع -->
-    <section id="projects">
-        <div class="section-title">
-            <h2 class="gradient-text" data-aos="fade-up" data-aos-duration="800" data-key="projects.title">Our Projects</h2>
-            <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-key="projects.subtitle">Explore our portfolio of successful projects across different categories</p>
+<!-- قسم المشاريع -->
+<section id="projects">
+    <div class="section-title">
+        <h2 class="gradient-text" data-aos="fade-up" data-aos-duration="600" data-key="projects.title">Our Projects</h2>
+        <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="100" data-key="projects.subtitle">Explore our portfolio of successful projects across different categories</p>
+    </div>
+    
+    <div class="projects-categories" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
+        <button class="category-btn active" data-category="web" data-key="projects.web">Web Development</button>
+        <button class="category-btn" data-category="mobile" data-key="projects.mobile">Mobile Apps</button>
+        <button class="category-btn" data-category="security" data-key="projects.security">Cyber Security</button>
+        <button class="category-btn" data-category="marketing" data-key="projects.marketing">Digital Marketing</button>
+        <button class="category-btn" data-category="design" data-key="projects.design">UI/UX Design</button>
+        <button class="category-btn" data-category="ai" data-key="projects.ai">AI Solutions</button>
+    </div>
+    
+    <div class="projects-grid">
+        <!-- مشاريع تطوير الويب -->
+        <div class="project-card glass" data-aos="fade-up" data-aos-duration="500" data-category="web" data-project="web1">
+            <div class="project-image">
+                <img src="./images/pexels-julio-lopez-75309646-29502363.jpg" alt="E-commerce Platform">
+            </div>
+            <div class="project-content">
+                <h3 data-key="projects.web1.title">E-commerce Platform</h3>
+                <p data-key="projects.web1.desc">A comprehensive online shopping platform with advanced features and secure payment integration.</p>
+            </div>
         </div>
         
-        <div class="projects-categories" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-            <button class="category-btn active" data-category="all" data-key="projects.all">All Projects</button>
-            <button class="category-btn" data-category="web" data-key="projects.web">Web Development</button>
-            <button class="category-btn" data-category="mobile" data-key="projects.mobile">Mobile Apps</button>
-            <button class="category-btn" data-category="security" data-key="projects.security">Cyber Security</button>
-            <button class="category-btn" data-category="marketing" data-key="projects.marketing">Digital Marketing</button>
-            <button class="category-btn" data-category="design" data-key="projects.design">UI/UX Design</button>
-            <button class="category-btn" data-category="ai" data-key="projects.ai">AI Solutions</button>
+        <div class="project-card glass" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" data-category="web" data-project="web2">
+            <div class="project-image">
+                <img src="./images/pexels-magnetme-3917414-5839466.jpg" alt="Corporate Website">
+            </div>
+            <div class="project-content">
+                <h3 data-key="projects.web2.title">Corporate Website</h3>
+                <p data-key="projects.web2.desc">A modern corporate website with CMS integration and responsive design for optimal user experience.</p>
+            </div>
         </div>
         
-        <div class="projects-grid">
-            <!-- مشاريع تطوير الويب -->
-            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-category="web" data-project="web1">
-                <div class="project-image">
-                    <img src="./images/pexels-julio-lopez-75309646-29502363.jpg" alt="E-commerce Platform">
-                </div>
-                <div class="project-content">
-                    <h3 data-key="projects.web1.title">E-commerce Platform</h3>
-                    <p data-key="projects.web1.desc">A comprehensive online shopping platform with advanced features and secure payment integration.</p>
-                </div>
+        <!-- مشاريع التطبيقات المحمولة -->
+        <div class="project-card glass" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-category="mobile" data-project="mobile1">
+            <div class="project-image">
+                <img src="./images/pexels-thisisengineering-3912977.jpg" alt="Fitness App">
             </div>
-            
-            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" data-category="web" data-project="web2">
-                <div class="project-image">
-                    <img src="./images/pexels-magnetme-3917414-5839466.jpg" alt="Corporate Website">
-                </div>
-                <div class="project-content">
-                    <h3 data-key="projects.web2.title">Corporate Website</h3>
-                    <p data-key="projects.web2.desc">A modern corporate website with CMS integration and responsive design for optimal user experience.</p>
-                </div>
-            </div>
-            
-            <!-- مشاريع تطبيقات الموبايل -->
-            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-category="mobile" data-project="mobile1">
-                <div class="project-image">
-                    <img src="./images/pexels-thisisengineering-3912977.jpg" alt="Fitness App">
-                </div>
-                <div class="project-content">
-                    <h3 data-key="projects.mobile1.title">Fitness Tracking App</h3>
-                    <p data-key="projects.mobile1.desc">A mobile application for tracking workouts, nutrition, and health metrics with personalized recommendations.</p>
-                </div>
-            </div>
-            
-            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" data-category="mobile" data-project="mobile2">
-                <div class="project-image">
-                    <img src="./images/pexels-anna-nekrashevich-6802049.jpg" alt="Finance App">
-                </div>
-                <div class="project-content">
-                    <h3 data-key="projects.mobile2.title">Personal Finance App</h3>
-                    <p data-key="projects.mobile2.desc">An intuitive mobile application for managing personal finances, budgets, and investment portfolios.</p>
-                </div>
-            </div>
-            
-            <!-- مشاريع الأمن السيبراني -->
-            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" data-category="security" data-project="security1">
-                <div class="project-image">
-                    <img src="./images/pexels-tima-miroshnichenko-5380589.jpg" alt="Security System">
-                </div>
-                <div class="project-content">
-                    <h3 data-key="projects.security1.title">Enterprise Security System</h3>
-                    <p data-key="projects.security1.desc">A comprehensive security solution for enterprise networks with threat detection and prevention capabilities.</p>
-                </div>
-            </div>
-            
-            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500" data-category="security" data-project="security2">
-                <div class="project-image">
-                    <img src="./images/pexels-pixabay-60504.jpg" alt="Data Protection">
-                </div>
-                <div class="project-content">
-                    <h3 data-key="projects.security2.title">Data Protection Framework</h3>
-                    <p data-key="projects.security2.desc">Implementation of a robust data protection framework with encryption and access control mechanisms.</p>
-                </div>
-            </div>
-            
-            <!-- مشاريع التسويق الرقمي -->
-            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600" data-category="marketing" data-project="marketing1">
-                <div class="project-image">
-                    <img src="./images/pexels-mikael-blomkvist-6476193.jpg" alt="Marketing Campaign">
-                </div>
-                <div class="project-content">
-                    <h3 data-key="projects.marketing1.title">Digital Marketing Campaign</h3>
-                    <p data-key="projects.marketing1.desc">A comprehensive digital marketing campaign that increased brand awareness by 150% in 3 months.</p>
-                </div>
-            </div>
-            
-            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700" data-category="marketing" data-project="marketing2">
-                <div class="project-image">
-                    <img src="./images/pexels-tobias-dziuba-319638-942331.jpg" alt="SEO Strategy">
-                </div>
-                <div class="project-content">
-                    <h3 data-key="projects.marketing2.title">SEO Optimization Strategy</h3>
-                    <p data-key="projects.marketing2.desc">Implementation of an SEO strategy that improved organic search rankings and increased website traffic by 200%.</p>
-                </div>
-            </div>
-            
-            <!-- مشاريع تصميم واجهات المستخدم -->
-            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800" data-category="design" data-project="design1">
-                <div class="project-image">
-                    <img src="./images/pexels-pixabay-221185.jpg" alt="UI Design">
-                </div>
-                <div class="project-content">
-                    <h3 data-key="projects.design1.title">Banking App UI Design</h3>
-                    <p data-key="projects.design1.desc">A modern and intuitive user interface design for a mobile banking application with enhanced user experience.</p>
-                </div>
-            </div>
-            
-            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="900" data-category="design" data-project="design2">
-                <div class="project-image">
-                    <img src="./images/pexels-pavel-danilyuk-6407632.jpg" alt="UX Research">
-                </div>
-                <div class="project-content">
-                    <h3 data-key="projects.design2.title">E-commerce UX Research</h3>
-                    <p data-key="projects.design2.desc">Comprehensive user experience research and redesign for an e-commerce platform to improve conversion rates.</p>
-                </div>
-            </div>
-            
-            <!-- مشاريع الذكاء الاصطناعي -->
-            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000" data-category="ai" data-project="ai1">
-                <div class="project-image">
-                    <img src="./images/pexels-uma-media-2149408028-30875540.jpg" alt="AI Chatbot">
-                </div>
-                <div class="project-content">
-                    <h3 data-key="projects.ai1.title">AI-Powered Chatbot</h3>
-                    <p data-key="projects.ai1.desc">Development of an intelligent chatbot for customer service with natural language processing capabilities.</p>
-                </div>
-            </div>
-            
-            <div class="project-card glass" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1100" data-category="ai" data-project="ai2">
-                <div class="project-image">
-                    <img src="./images/pexels-rdne-7947670.jpg" alt="Predictive Analytics">
-                </div>
-                <div class="project-content">
-                    <h3 data-key="projects.ai2.title">Predictive Analytics System</h3>
-                    <p data-key="projects.ai2.desc">Implementation of a machine learning system for predictive analytics and business intelligence.</p>
-                </div>
+            <div class="project-content">
+                <h3 data-key="projects.mobile1.title">Fitness Tracking App</h3>
+                <p data-key="projects.mobile1.desc">A mobile application for tracking workouts, nutrition, and health metrics with personalized recommendations.</p>
             </div>
         </div>
-    </section>
-
+        
+        <div class="project-card glass" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150" data-category="mobile" data-project="mobile2">
+            <div class="project-image">
+                <img src="./images/pexels-anna-nekrashevich-6802049.jpg" alt="Finance App">
+            </div>
+            <div class="project-content">
+                <h3 data-key="projects.mobile2.title">Personal Finance App</h3>
+                <p data-key="projects.mobile2.desc">An intuitive mobile application for managing personal finances, budgets, and investment portfolios.</p>
+            </div>
+        </div>
+        
+        <!-- مشاريع الأمن السيبراني -->
+        <div class="project-card glass" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-category="security" data-project="security1">
+            <div class="project-image">
+                <img src="./images/pexels-tima-miroshnichenko-5380589.jpg" alt="Security System">
+            </div>
+            <div class="project-content">
+                <h3 data-key="projects.security1.title">Enterprise Security System</h3>
+                <p data-key="projects.security1.desc">A comprehensive security solution for enterprise networks with threat detection and prevention capabilities.</p>
+            </div>
+        </div>
+        
+        <div class="project-card glass" data-aos="fade-up" data-aos-duration="500" data-aos-delay="250" data-category="security" data-project="security2">
+            <div class="project-image">
+                <img src="./images/pexels-pixabay-60504.jpg" alt="Data Protection">
+            </div>
+            <div class="project-content">
+                <h3 data-key="projects.security2.title">Data Protection Framework</h3>
+                <p data-key="projects.security2.desc">Implementation of a robust data protection framework with encryption and access control mechanisms.</p>
+            </div>
+        </div>
+        
+        <!-- مشاريع التسويق الرقمي -->
+        <div class="project-card glass" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-category="marketing" data-project="marketing1">
+            <div class="project-image">
+                <img src="./images/pexels-mikael-blomkvist-6476193.jpg" alt="Marketing Campaign">
+            </div>
+            <div class="project-content">
+                <h3 data-key="projects.marketing1.title">Digital Marketing Campaign</h3>
+                <p data-key="projects.marketing1.desc">A comprehensive digital marketing campaign that increased brand awareness by 150% in 3 months.</p>
+            </div>
+        </div>
+        
+        <div class="project-card glass" data-aos="fade-up" data-aos-duration="500" data-aos-delay="350" data-category="marketing" data-project="marketing2">
+            <div class="project-image">
+                <img src="./images/pexels-tobias-dziuba-319638-942331.jpg" alt="SEO Strategy">
+            </div>
+            <div class="project-content">
+                <h3 data-key="projects.marketing2.title">SEO Optimization Strategy</h3>
+                <p data-key="projects.marketing2.desc">Implementation of an SEO strategy that improved organic search rankings and increased website traffic by 200%.</p>
+            </div>
+        </div>
+        
+        <!-- مشاريع التصميم -->
+        <div class="project-card glass" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400" data-category="design" data-project="design1">
+            <div class="project-image">
+                <img src="./images/pexels-pixabay-221185.jpg" alt="UI Design">
+            </div>
+            <div class="project-content">
+                <h3 data-key="projects.design1.title">Banking App UI Design</h3>
+                <p data-key="projects.design1.desc">A modern and intuitive user interface design for a mobile banking application with enhanced user experience.</p>
+            </div>
+        </div>
+        
+        <div class="project-card glass" data-aos="fade-up" data-aos-duration="500" data-aos-delay="450" data-category="design" data-project="design2">
+            <div class="project-image">
+                <img src="./images/pexels-pavel-danilyuk-6407632.jpg" alt="UX Research">
+            </div>
+            <div class="project-content">
+                <h3 data-key="projects.design2.title">E-commerce UX Research</h3>
+                <p data-key="projects.design2.desc">Comprehensive user experience research and redesign for an e-commerce platform to improve conversion rates.</p>
+            </div>
+        </div>
+        
+        <!-- مشاريع الذكاء الاصطناعي -->
+        <div class="project-card glass" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-category="ai" data-project="ai1">
+            <div class="project-image">
+                <img src="./images/pexels-uma-media-2149408028-30875540.jpg" alt="AI Chatbot">
+            </div>
+            <div class="project-content">
+                <h3 data-key="projects.ai1.title">AI-Powered Chatbot</h3>
+                <p data-key="projects.ai1.desc">Development of an intelligent chatbot for customer service with natural language processing capabilities.</p>
+            </div>
+        </div>
+        
+        <div class="project-card glass" data-aos="fade-up" data-aos-duration="500" data-aos-delay="550" data-category="ai" data-project="ai2">
+            <div class="project-image">
+                <img src="./images/pexels-rdne-7947670.jpg" alt="Predictive Analytics">
+            </div>
+            <div class="project-content">
+                <h3 data-key="projects.ai2.title">Predictive Analytics System</h3>
+                <p data-key="projects.ai2.desc">Implementation of a machine learning system for predictive analytics and business intelligence.</p>
+            </div>
+        </div>
+    </div>   
+</section>
     <!-- قسم التقنيات -->
     <!-- Tech Stack Section -->
     <section id="tech-stack" class="tech-stack-section">
@@ -423,7 +438,7 @@
                     </div>
                     <div class="tech-item">
                         <div class="tech-icon">
-                            <i class="fab fa-adobe"></i>
+                            <i class="si si-adobexd"></i>
                         </div>
                         <span class="tech-name">Adobe XD</span>
                     </div>
@@ -521,7 +536,7 @@
                     </div>
                     <div class="tech-item">
                         <div class="tech-icon">
-                            <i class="fab fa-adobe"></i>
+                            <i class="si si-adobexd"></i>
                         </div>
                         <span class="tech-name">Adobe XD</span>
                     </div>
@@ -706,6 +721,20 @@
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- ملفات JavaScript المنفصلة -->
+    <script src="./js/main.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/language.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/hero.js"></script>
+    <script src="./js/services.js"></script>
+    <script src="./js/about.js"></script>
+    <script src="./js/projects.js"></script>
+    <script src="./js/techstack.js"></script>
+    <script src="./js/stats.js"></script>
+    <script src="./js/scrollAnimations.js"></script>
 </body>
 </html>

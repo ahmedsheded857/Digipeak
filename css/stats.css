@@ -1,0 +1,86 @@
+/* قسم الإحصائيات المتحركة */
+#counter-stats {
+    padding: 80px 5%;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+#counter-stats::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(0, 180, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(157, 78, 221, 0.1) 0%, transparent 50%);
+    z-index: 0;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    min-width: 200px;
+    transition: var(--transition);
+}
+
+.stat-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 180, 255, 0.2);
+}
+
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan), var(--accent-purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.stat-label {
+    font-size: 1.2rem;
+    color: var(--text-gray);
+    font-weight: 500;
+}
+
+@media (max-width: 992px) {
+    .stats-container {
+        gap: 20px;
+    }
+
+    .stat-box {
+        min-width: 150px;
+        padding: 20px;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-box {
+        width: 100%;
+        max-width: 250px;
+    }
+}

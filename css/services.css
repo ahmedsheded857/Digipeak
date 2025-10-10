@@ -1,0 +1,261 @@
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    padding: 30px;
+    border-radius: 15px;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 180, 255, 0.2);
+}
+
+.light-mode .service-card:hover {
+    box-shadow: 0 15px 30px rgba(0, 119, 204, 0.15);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--accent-cyan);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: var(--text-gray);
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.service-card .btn {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+/* المودال الخاص بالخدمات */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.service-modal {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 30px;
+    position: relative;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    box-shadow: 0 0 30px rgba(0, 180, 255, 0.3);
+}
+
+.modal-overlay.active .service-modal {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.modal-close:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(90deg);
+}
+
+.modal-header {
+    margin-bottom: 20px;
+    padding-right: 40px;
+}
+
+.modal-icon {
+    font-size: 2.5rem;
+    color: var(--accent-cyan);
+    margin-bottom: 15px;
+}
+
+.modal-header h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    color: var(--text-gray);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.modal-features {
+    margin: 20px 0;
+}
+
+.modal-features h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--accent-cyan);
+}
+
+.modal-features ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.modal-features li {
+    color: var(--text-gray);
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.modal-features li::before {
+    content: '▸';
+    color: var(--accent-cyan);
+    position: absolute;
+    left: -20px;
+}
+
+@media (max-width: 576px) {
+    .service-modal {
+        padding: 20px;
+    }
+
+    .modal-header h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* خدمات مخفية في الموبايل */
+.mobile-hidden-service {
+    display: block;
+}
+
+/* زر View All للموبايل */
+.view-all-container {
+    text-align: center;
+    margin-top: 40px;
+    display: none;
+}
+
+.view-all-btn {
+    padding: 12px 35px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 0 20px rgba(0, 180, 255, 0.4);
+}
+
+.view-all-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(0, 180, 255, 0.6);
+}
+
+.light-mode .view-all-btn {
+    box-shadow: 0 0 15px rgba(0, 119, 204, 0.3);
+}
+
+.light-mode .view-all-btn:hover {
+    box-shadow: 0 0 20px rgba(0, 119, 204, 0.4);
+}
+
+/* أنيميشن لظهور الخدمات الإضافية */
+.service-card.revealed {
+    animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mobile-only {
+        display: block !important;
+    }
+    
+    .mobile-hidden-service {
+        display: none;
+    }
+    
+    .services-grid.show-all .mobile-hidden-service {
+        display: block;
+    }
+    
+    .view-all-container.hidden {
+        display: none !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-only {
+        display: none !important;
+    }
+    
+    .mobile-hidden-service {
+        display: block !important;
+    }
+}
